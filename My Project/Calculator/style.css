@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+.calculator {
+    height: 520px;
+    width: 300px;
+    box-shadow: 6px 6px 40px rgba(0, 0, 0, .3);
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+form input {
+    height: 150px;
+    width: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 3rem;
+    color: black;
+    text-align: right;
+    padding: 1rem;
+    outline: none;
+    pointer-events: none;
+
+
+}
+
+button {
+    flex: 0 0 22%;
+    margin: 5px 0;
+    border: 1px solid white;
+    height: 53px;
+    width: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 20px;
+
+}
+
+.btn-yellow {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.btn-grey {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.btn-green {
+    background-color: rgb(6, 180, 6);
+    color: black;
+}
+
+.btn-red {
+    background-color: red;
+}
+
+.btn-green:hover {
+    transition: all .6s;
+    background-color: rgb(9, 214, 9);
+}
+
+.btn-grey:hover {
+    transition: all .6s;
+    background-color: rgb(63, 103, 149);
+}
+
+.btn-red:hover {
+    transition: all .6s;
+    background-color: rgb(255, 84, 84);
+}
+
+.btn-yellow:hover {
+    transition: all .7s;
+    background-color: #eded4b;
+    color: black;
+}
+
+.name {
+    font-size: 18px;
+    max-width: 100%;
+    display: flex;
+    position: relative;
+    left: 20%;
+    text-transform: uppercase;
+    padding-top: 10px;
+
+}
