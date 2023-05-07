@@ -1,0 +1,33 @@
+body{
+    background-color: #ff008b;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    padding: 50px;
+    margin: 0;
+
+    border: 10px solid #fff;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+ul li{
+    list-style: none;
+    float: left;color: #fff;
+    font-size: 5em;
+    transition: .9s;
+
+}
+
+ul:hover li{
+    transform: rotateY(360deg);
+}
+
+ul:hover li:nth-child(1){
+    transition-delay: .9s;
+}
